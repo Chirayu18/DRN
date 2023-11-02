@@ -402,7 +402,6 @@ if pased_args['dry']:
     sys.exit(0)
 
 from Train import Train
-from util import check_git, print_params
 import torch.autograd
 
 trainer = Train(**args)
