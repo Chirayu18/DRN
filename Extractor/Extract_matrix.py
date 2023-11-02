@@ -240,14 +240,14 @@ class Extract:
         HitsEn = ak.concatenate((arrs["RecHitEnPho1"], arrs["RecHitEnPho2"]), axis=1)
         HitsET = ak.concatenate((arrs["RecHitETPho1"], arrs["RecHitETPho2"]), axis=1)
         HitsEZ = ak.concatenate((arrs["RecHitEZPho1"], arrs["RecHitEZPho2"]), axis=1)
-        #HitsX = HitsX[[j > 0.1 for j in HitsEn]]
-        #HitsY = HitsY[[j > 0.1 for j in HitsEn]]
-        #HitsZ = HitsZ[[j > 0.1 for j in HitsEn]]
-        #HitsEta = HitsEta[[j > 0.1 for j in HitsEn]]
-        #HitsPhi = HitsPhi[[j > 0.1 for j in HitsEn]]
+        HitsX = HitsX[[j > 0.1 for j in HitsEn]]
+        HitsY = HitsY[[j > 0.1 for j in HitsEn]]
+        HitsZ = HitsZ[[j > 0.1 for j in HitsEn]]
+        HitsEta = HitsEta[[j > 0.1 for j in HitsEn]]
+        HitsPhi = HitsPhi[[j > 0.1 for j in HitsEn]]
         HitsiEta = HitsiEta[[j > 0.1 for j in HitsEn]]
         HitsiPhi = HitsiPhi[[j > 0.1 for j in HitsEn]]
-        #HitsEn = HitsEn[[j > 0.1 for j in HitsEn]]
+        HitsEn = HitsEn[[j > 0.1 for j in HitsEn]]
         #HitsEn = np.log(np.abs(HitsEn))
         HitsET = HitsET[[j > 0.1 for j in HitsEn]]
         HitsEZ = HitsEZ[[j > 0.1 for j in HitsEn]]
